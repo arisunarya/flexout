@@ -1,0 +1,155 @@
+[flow] {
+	display: flex;
+}
+
+// flex flow
+[flow^="row"] {
+	flex-direction: row;
+}
+
+[flow^="column"] {
+	flex-direction: column;
+}
+
+[flow$="wrap"] {
+	flex-wrap: wrap;
+}
+
+[flow$="nowrap"] {
+	flex-wrap: nowrap;
+}
+
+[items="start"] {
+	align-items: flex-start;
+}
+
+// align & justify content
+[align="start start"],
+[align="start center"],
+[align="start end"],
+[align="start beetwen"],
+[align="start around"] {
+	align-content: flex-start;
+}
+
+[align="center start"],
+[align="center center"],
+[align="center end"],
+[align="center beetwen"],
+[align="center around"] {
+	align-content: center;
+}
+
+[align="end start"],
+[align="end center"],
+[align="end end"],
+[align="end beetwen"],
+[align="end around"] {
+	align-content: flex-end;
+}
+
+[align="stretch start"],
+[align="stretch center"],
+[align="stretch end"],
+[align="stretch beetwen"],
+[align="stretch around"] {
+	align-content: stretch;
+}
+
+[align="around start"],
+[align="around center"],
+[align="around end"],
+[align="around beetwen"],
+[align="around around"] {
+	align-content: space-around;
+}
+
+[align="between start"],
+[align="between center"],
+[align="between end"],
+[align="between beetwen"],
+[align="between around"] {
+	align-content: space-between;
+}
+
+[align="start start"],
+[align="center start"],
+[align="end start"],
+[align="around start"],
+[align="between start"] {
+	justify-content: flex-start;
+}
+
+[align="start center"],
+[align="center center"],
+[align="end center"],
+[align="around center"],
+[align="between center"] {
+	justify-content: center;
+}
+
+[align="start end"],
+[align="center end"],
+[align="end end"],
+[align="around end"],
+[align="between end"] {
+	justify-content: flex-end;
+}
+
+[align="start around"],
+[align="center around"],
+[align="end around"],
+[align="around around"],
+[align="between around"] {
+	justify-content: space-around;
+}
+
+[align="start between"],
+[align="center between"],
+[align="end between"],
+[align="around between"],
+[align="between between"] {
+	justify-content: space-between;
+}
+
+// align items
+[align-items="baseline"] {
+	align-items: baseline;
+}
+
+[align-items="start"] {
+	align-items: flex-start;
+}
+
+[align-items="center"] {
+	align-items: center;
+}
+
+[align-items="end"] {
+	align-items: flex-end;
+}
+
+[align-items="stretch"] {
+	align-items: stretch;
+}
+
+// align self
+[align-self="baseline"] {
+	align-self: baseline;
+}
+
+[align-self="start"] {
+	align-self: flex-start;
+}
+
+[align-self="center"] {
+	align-self: center;
+}
+
+[align-self="end"] {
+	align-self: flex-end;
+}
+
+[align-self="stretch"] {
+	align-self: stretch;
+}
