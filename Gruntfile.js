@@ -16,7 +16,7 @@ module.exports = function(grunt){
 					sourceMap: true
 				},
 				files: {
-					'docs/css/flexout-docs.css': 'docs/scss/flexout-docs.scss'
+					'docs/css/docs.css': 'docs/scss/docs.scss'
 				}
 			}
 		},
@@ -41,7 +41,7 @@ module.exports = function(grunt){
 				options: {
 					map: true,
 				},
-				src: "docs/css/flexout-docs.css"
+				src: "docs/css/docs.css"
 			}
 		},
 
@@ -56,7 +56,7 @@ module.exports = function(grunt){
 					sourceMap: true
 				},
 				files: {
-					"docs/css/flexout-docs.css": "docs/css/flexout-docs.css"
+					"docs/css/docs.css": "docs/css/docs.css"
 				}
 			}
 		},
@@ -80,7 +80,7 @@ module.exports = function(grunt){
 				files: [
 					"dist/flexout.css",
 					"dist/flexout.min.css",
-					"docs/css/flexout-docs.css",
+					"docs/css/docs.css",
 					"docs/index.html"
 				],
 			},
