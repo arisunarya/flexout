@@ -1,0 +1,34 @@
+{
+  "name": "flexout",
+  "version": "1.0.0",
+  "homepage": "https://github.com/arisunarya/flexout#readme",
+  "author": "Ari Sunarya",
+  "description": "flexbox layout",
+  "main": "flexout.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arisunarya/flexout.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "layout",
+    "grid",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "bugs": {
+    "url": "https://github.com/arisunarya/flexout/issues"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
