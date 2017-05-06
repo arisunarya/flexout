@@ -25,3 +25,11 @@ body{
 	background: #fff;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+.main{
+	height: 100%;
+	>[flex]{
+		box-shadow: inset 0 0 0 2px #000;
+		text-align: center;
+	}
+}
