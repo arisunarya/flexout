@@ -220,6 +220,3 @@ $divided-item: 10 !default;
 }
 
 @include flexout;
-@media (min-width: 800px){
-	// @include flexout("lg");
-}
