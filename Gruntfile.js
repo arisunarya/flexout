@@ -90,8 +90,7 @@ module.exports = function(grunt){
 			},
 			docs: {
 				files: "docs/scss/*.scss",
-				// tasks: ["sass:docs", "autoprefixer:docs", "cssmin:docs"]
-				tasks: ["sass:docs", "autoprefixer:docs"]
+				tasks: ["sass:docs", "autoprefixer:docs", "cssmin:docs"]
 			}
 		}
 	});
