@@ -2,12 +2,12 @@ $columns-item: 12 !default;
 $divided-item: 10 !default;
 
 @mixin flexout($media: null) {
-	@if $media{
+	@if $media {
 		$media: "-#{$media}";
-	}
-
-	[flow#{$media}] {
-		display: flex;
+	} @else {
+		[flow] {
+			display: flex;
+		}
 	}
 
 	// controls flex-direction & flex-wrap
