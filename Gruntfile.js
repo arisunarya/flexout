@@ -85,12 +85,13 @@ module.exports = function(grunt){
 				],
 			},
 			dist: {
-				files: "scss/*.scss",
+				files: "flexout.scss",
 				tasks: ["sass", "autoprefixer", "cssmin"]
 			},
 			docs: {
 				files: "docs/scss/*.scss",
-				tasks: ["sass:docs", "autoprefixer:docs", "cssmin:docs"]
+				// tasks: ["sass:docs", "autoprefixer:docs", "cssmin:docs"]
+				tasks: ["sass:docs", "autoprefixer:docs"]
 			}
 		}
 	});
