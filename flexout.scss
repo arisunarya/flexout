@@ -205,15 +205,15 @@ $divided-item: 10 !default;
 
 	// divided
 	@for $i from 1 through $divided-item {
-		[divided#{$media}="#{$i}"] > [flex]{
+		[divided#{$media}="#{$i}"] > * {
 			flex: 1 1 (100% / $i);
 		}
 
-		[divided#{$media}="#{$i}"][flow^="row"] > [flex]{
+		[divided#{$media}="#{$i}"][flow^="row"] > * {
 			max-width: (100% / $i);
 		}
 
-		[divided#{$media}="#{$i}"][flow^="column"] > [flex]{
+		[divided#{$media}="#{$i}"][flow^="column"] > * {
 			max-height: (100% / $i);
 		}
 	}
