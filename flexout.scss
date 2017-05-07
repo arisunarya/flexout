@@ -23,6 +23,10 @@ $divided-item: 10 !default;
 		flex-wrap: wrap;
 	}
 
+	[flow#{$media}$="reverse"] {
+		flex-wrap: wrap-reverse;
+	}
+
 	[flow#{$media}$="nowrap"] {
 		flex-wrap: nowrap;
 	}

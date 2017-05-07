@@ -27,6 +27,12 @@
           flex-wrap: wrap;
 }
 
+[flow$="reverse"] {
+  -webkit-flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+          flex-wrap: wrap-reverse;
+}
+
 [flow$="nowrap"] {
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
