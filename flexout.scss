@@ -242,11 +242,11 @@ $divided-item: 16 !default;
 			flex: 0 0 (100% / $columns-item * $i);
 		}
 		
-		[flow#{$media}^="row"] > [flex="#{$i}"] {
+		[flow^="row"] > [flex#{$media}="#{$i}"] {
 			max-width: (100% / $columns-item * $i);
 		}
 		
-		[flow#{$media}^="column"] > [flex="#{$i}"] {
+		[flow^="column"] > [flex#{$media}="#{$i}"] {
 			max-height: (100% / $columns-item * $i);
 		}
 	}
