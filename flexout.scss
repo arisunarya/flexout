@@ -1,5 +1,5 @@
 $columns-item: 12 !default;
-$divided-item: 10 !default;
+$divided-item: 16 !default;
 
 @mixin flexout($media: null) {
 	@if $media {
