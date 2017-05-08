@@ -1,5 +1,6 @@
 $columns-item: 12 !default;
 $divided-item: 16 !default;
+$order-length: 6 !default;
 
 @mixin flexout($media: null) {
 	@if $media {
@@ -276,6 +277,37 @@ $divided-item: 16 !default;
 
 		[divided#{$media}="#{$i}"][flow^="column"] > * {
 			max-height: (100% / $i);
+		}
+	}
+
+	// controls flex order
+	[order#{$media}="initial"]{
+		order: 0;
+	}
+
+	@for $i from 1 through $order-length {
+		@if $i == 1 {
+			[order#{$media}="first"],
+			[order#{$media}="first-1"] {
+				order: 0 - $order-length;
+			}
+		} @else {
+			[order#{$media}="first-#{$i}"]{
+				order: 0 - ($order-length + 1) + $i;
+			}
+		}
+	}
+
+	@for $i from 1 through $order-length {
+		@if $i == 1 {
+			[order#{$media}="last"],
+			[order#{$media}="last-1"] {
+				order: $order-length;
+			}
+		} @else {
+			[order#{$media}="last-#{$i}"]{
+				order: $order-length + 1 - $i;
+			}
 		}
 	}
 }
