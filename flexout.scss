@@ -195,7 +195,7 @@ $divided-item: 10 !default;
 	// column
 	@for $i from 1 through $columns-item {
 		[flex#{$media}="#{$i}"] {
-			flex: 1 1 (100% / $columns-item * $i);
+			flex: 0 0 (100% / $columns-item * $i);
 		}
 		
 		[flow#{$media}^="row"] > [flex="#{$i}"] {
@@ -210,7 +210,7 @@ $divided-item: 10 !default;
 	// divided
 	@for $i from 1 through $divided-item {
 		[divided#{$media}="#{$i}"] > * {
-			flex: 1 1 (100% / $i);
+			flex: 0 0 (100% / $i);
 		}
 
 		[divided#{$media}="#{$i}"][flow^="row"] > * {
