@@ -5,7 +5,14 @@
   display: flex;
 }
 
-[flow="row"],
+[flow="row"] {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 [flow="row nowrap"] {
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
@@ -24,7 +31,14 @@
           flex-flow: row wrap-reverse;
 }
 
-[flow="row"],
+[flow="row-reverse"] {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 [flow="row-reverse nowrap"] {
   -webkit-flex-flow: row-reverse nowrap;
       -ms-flex-flow: row-reverse nowrap;
@@ -43,7 +57,14 @@
           flex-flow: row-reverse wrap-reverse;
 }
 
-[flow="column"],
+[flow="column"] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 [flow="column nowrap"] {
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
@@ -62,7 +83,14 @@
           flex-flow: column wrap-reverse;
 }
 
-[flow="column-reverse"],
+[flow="column-reverse"] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
 [flow="column-reverse nowrap"] {
   -webkit-flex-flow: column-reverse nowrap;
       -ms-flex-flow: column-reverse nowrap;

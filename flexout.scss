@@ -11,7 +11,10 @@ $divided-item: 10 !default;
 	}
 
 	// controls flex-direction & flex-wrap
-	[flow#{$media}="row"],
+	[flow#{$media}="row"] {
+		flex-direction: row;
+	}
+
 	[flow#{$media}="row nowrap"] {
 		flex-flow: row nowrap;
 	}
@@ -23,8 +26,11 @@ $divided-item: 10 !default;
 	[flow#{$media}="row wrap-reverse"] {
 		flex-flow: row wrap-reverse;
 	}
+	
+	[flow#{$media}="row-reverse"] {
+		flex-direction: row-reverse;
+	}
 
-	[flow#{$media}="row"],
 	[flow#{$media}="row-reverse nowrap"] {
 		flex-flow: row-reverse nowrap;
 	}
@@ -37,7 +43,10 @@ $divided-item: 10 !default;
 		flex-flow: row-reverse wrap-reverse;
 	}
 
-	[flow#{$media}="column"],
+	[flow#{$media}="column"] {
+		flex-direction: column;
+	}
+
 	[flow#{$media}="column nowrap"] {
 		flex-flow: column nowrap;
 	}
@@ -50,7 +59,10 @@ $divided-item: 10 !default;
 		flex-flow: column wrap-reverse;
 	}
 
-	[flow#{$media}="column-reverse"],
+	[flow#{$media}="column-reverse"] {
+		flex-direction: column-reverse;
+	}
+
 	[flow#{$media}="column-reverse nowrap"] {
 		flex-flow: column-reverse nowrap;
 	}
