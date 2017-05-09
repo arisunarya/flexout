@@ -1,6 +1,18 @@
 @import "normalize.scss";
 @import "../../flexout";
 
+@media(min-width: 768px){
+	@include flexout("sm");
+}
+
+@media(min-width: 992px){
+	@include flexout("md");
+}
+
+@media(min-width: 1200px){
+	@include flexout("lg");
+}
+
 *::before,
 *::after,
 *{
@@ -22,7 +34,7 @@ html{
 }
 
 body{
-	flex: 1 0 auto;
+	flex: 1 0 0%;
 	color: #000;
 	background: #fff;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -33,11 +45,7 @@ header{
 }
 
 main{
-	flex: 1 0 auto;
-	>[flex]{
-		box-shadow: inset 0 0 0 2px #000;
-		text-align: center;
-	}
+	flex: 1;
 }
 
 footer{
@@ -57,7 +65,6 @@ section{
 }
 
 .box{
-	padding: 20px;
 	border: 1px solid #000;
 }
 
@@ -67,7 +74,7 @@ section{
 	text-align: center;
 }
 
-.spaces{
+.gutter{
 	margin: -10px;
 }
 
@@ -78,10 +85,10 @@ section{
 .cell{
 	background: #fff;
 	border: 1px solid transparent;
+}
 
-	>[flex]{
-		padding: 20px;
-		background: inherit;
-		box-shadow: 0px 0px 0 1px #000;
-	}
+.cell-item{
+	padding: 20px;
+	background: inherit;
+	box-shadow: 0px 0px 0 1px #000;
 }

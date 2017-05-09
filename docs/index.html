@@ -16,26 +16,34 @@
 		<main>
 			<div class="container">
 				<section>
-					<div class="cell" flow="row wrap">
-						<div flex><div class="box-item">item</div></div>
-						<div flex><div class="box-item">item</div></div>
-						<div flex><div class="box-item">item</div></div>
-						<div flex><div class="box-item">item</div></div>
-						<div flex><div class="box-item">item</div></div>
+					<h2></h2>
+					<div flow="row wrap" class="cell">
+						<div flex class="cell-item"><div class="box-item">item 1</div></div>
+						<div flex class="cell-item"><div class="box-item">item 2</div></div>
+						<div flex order="last" class="cell-item"><div class="box-item">item 3</div></div>
+						<div flex order="last-2" class="cell-item"><div class="box-item">item 4</div></div>
+						<div flex class="cell-item"><div class="box-item">item 5</div></div>
+						<div flex class="cell-item"><div class="box-item">item 6</div></div>
+						<div flex class="cell-item"><div class="box-item">item 7</div></div>
+						<div flex class="cell-item"><div class="box-item">item 8</div></div>
+						<div flex class="cell-item"><div class="box-item">item 9</div></div>
+						<div flex class="cell-item"><div class="box-item">item 10</div></div>
 					</div>
 				</section>
 
 				<section>
 					<div class="box">
-						<div flow="row wrap" class="spaces">
-						<div flex="6" flow class="space">
-							<div class="box-item" flex>item</div>
-						</div>
-							<div flex="6">
-							<div class="space"><div class="box-item">item</div></div>
-							<div class="space"><div class="box-item">item</div></div>
-							<div class="space"><div class="box-item">item</div></div>
-						</div>
+						<div class="gutter">
+							<div flow="row wrap">
+								<div flex="6" flow class="space">
+									<div flex class="box-item">item</div>
+								</div>
+								<div flex="6" flow="column">
+									<div class="space"><div class="box-item">item</div></div>
+									<div class="space"><div class="box-item">item</div></div>
+									<div class="space"><div class="box-item">item</div></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
