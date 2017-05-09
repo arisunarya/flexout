@@ -24,14 +24,15 @@ module.exports = function(grunt){
 		autoprefixer: {
 			options: {
 				browsers: [
-					"Android 2.3",
-					"Android >= 4",
-					"Chrome >= 20",
-					"Firefox >= 24",
-					"Explorer >= 8",
-					"iOS >= 6",
+					"Explorer >= 11",
+					"Edge >= 14",
+					"Firefox >= 52",
+					"Chrome >= 49",
 					"Opera >= 12",
-					"Safari >= 6"
+					"Safari >= 10",
+					"Android >= 4.4",
+					"iOS >= 6"
+					// "iOS >= 9.3"
 				]
 			},
 			dist: {
