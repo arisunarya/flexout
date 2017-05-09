@@ -24,7 +24,7 @@ module.exports = function(grunt){
 		autoprefixer: {
 			options: {
 				browsers: [
-					"Explorer >= 10",
+					"Explorer >= 11",
 					"Edge >= 14",
 					"Firefox >= 52",
 					"Chrome >= 49",
