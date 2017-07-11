@@ -93,7 +93,7 @@ $order-length: 6 !default;
 	[align#{$media}="start start"],
 	[align#{$media}="start center"],
 	[align#{$media}="start end"],
-	[align#{$media}="start beetwen"],
+	[align#{$media}="start between"],
 	[align#{$media}="start around"] {
 		align-content: flex-start;
 	}
@@ -101,7 +101,7 @@ $order-length: 6 !default;
 	[align#{$media}="center start"],
 	[align#{$media}="center center"],
 	[align#{$media}="center end"],
-	[align#{$media}="center beetwen"],
+	[align#{$media}="center between"],
 	[align#{$media}="center around"] {
 		align-content: center;
 	}
@@ -109,7 +109,7 @@ $order-length: 6 !default;
 	[align#{$media}="end start"],
 	[align#{$media}="end center"],
 	[align#{$media}="end end"],
-	[align#{$media}="end beetwen"],
+	[align#{$media}="end between"],
 	[align#{$media}="end around"] {
 		align-content: flex-end;
 	}
@@ -117,7 +117,7 @@ $order-length: 6 !default;
 	[align#{$media}="stretch start"],
 	[align#{$media}="stretch center"],
 	[align#{$media}="stretch end"],
-	[align#{$media}="stretch beetwen"],
+	[align#{$media}="stretch between"],
 	[align#{$media}="stretch around"] {
 		align-content: stretch;
 	}
@@ -125,7 +125,7 @@ $order-length: 6 !default;
 	[align#{$media}="around start"],
 	[align#{$media}="around center"],
 	[align#{$media}="around end"],
-	[align#{$media}="around beetwen"],
+	[align#{$media}="around between"],
 	[align#{$media}="around around"] {
 		align-content: space-around;
 	}
@@ -133,7 +133,7 @@ $order-length: 6 !default;
 	[align#{$media}="between start"],
 	[align#{$media}="between center"],
 	[align#{$media}="between end"],
-	[align#{$media}="between beetwen"],
+	[align#{$media}="between between"],
 	[align#{$media}="between around"] {
 		align-content: space-between;
 	}
