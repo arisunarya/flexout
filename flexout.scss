@@ -7,292 +7,292 @@ $order-length: 6 !default;
 		$media: "-#{$media}";
 	}
 
-	[flow#{$media}] {
+	[data-flow#{$media}] {
 		display: flex;
 	}
 
 	// controls flex-direction & flex-wrap
-	[flow#{$media}="row nowrap"] {
+	[data-flow#{$media}="row nowrap"] {
 		flex-flow: row nowrap;
 	}
 
-	[flow#{$media}="row wrap"] {
+	[data-flow#{$media}="row wrap"] {
 		flex-flow: row wrap;
 	}
 
-	[flow#{$media}="row wrap-reverse"] {
+	[data-flow#{$media}="row wrap-reverse"] {
 		flex-flow: row wrap-reverse;
 	}
 
-	[flow#{$media}="row-reverse nowrap"] {
+	[data-flow#{$media}="row-reverse nowrap"] {
 		flex-flow: row-reverse nowrap;
 	}
 
-	[flow#{$media}="row-reverse wrap"] {
+	[data-flow#{$media}="row-reverse wrap"] {
 		flex-flow: row-reverse wrap;
 	}
 
-	[flow#{$media}="row-reverse wrap-reverse"] {
+	[data-flow#{$media}="row-reverse wrap-reverse"] {
 		flex-flow: row-reverse wrap-reverse;
 	}
 
-	[flow#{$media}="column nowrap"] {
+	[data-flow#{$media}="column nowrap"] {
 		flex-flow: column nowrap;
 	}
 
-	[flow#{$media}="column wrap"] {
+	[data-flow#{$media}="column wrap"] {
 		flex-flow: column wrap;
 	}
 
-	[flow#{$media}="column wrap-reverse"] {
+	[data-flow#{$media}="column wrap-reverse"] {
 		flex-flow: column wrap-reverse;
 	}
 
-	[flow#{$media}="column-reverse nowrap"] {
+	[data-flow#{$media}="column-reverse nowrap"] {
 		flex-flow: column-reverse nowrap;
 	}
 
-	[flow#{$media}="column-reverse wrap"] {
+	[data-flow#{$media}="column-reverse wrap"] {
 		flex-flow: column-reverse wrap;
 	}
 
-	[flow#{$media}="column-reverse wrap-reverse"] {
+	[data-flow#{$media}="column-reverse wrap-reverse"] {
 		flex-flow: column-reverse wrap-reverse;
 	}
 
 	// for single values
-	[flow#{$media}="row"] {
+	[data-flow#{$media}="row"] {
 		flex-direction: row;
 	}
 	
-	[flow#{$media}="row-reverse"] {
+	[data-flow#{$media}="row-reverse"] {
 		flex-direction: row-reverse;
 	}
 
-	[flow#{$media}="column"] {
+	[data-flow#{$media}="column"] {
 		flex-direction: column;
 	}
 
-	[flow#{$media}="column-reverse"] {
+	[data-flow#{$media}="column-reverse"] {
 		flex-direction: column-reverse;
 	}
 
-	[flow#{$media}="nowrap"] {
+	[data-flow#{$media}="nowrap"] {
 		flex-wrap: nowrap;
 	}
 
-	[flow#{$media}="wrap"] {
+	[data-flow#{$media}="wrap"] {
 		flex-wrap: wrap;
 	}
 
-	[flow#{$media}="wrap-reverse"] {
+	[data-flow#{$media}="wrap-reverse"] {
 		flex-wrap: wrap-reverse;
 	}
 
 	// controls align-content & justify-content
-	[align#{$media}="start start"],
-	[align#{$media}="start center"],
-	[align#{$media}="start end"],
-	[align#{$media}="start between"],
-	[align#{$media}="start around"] {
+	[data-align#{$media}="start start"],
+	[data-align#{$media}="start center"],
+	[data-align#{$media}="start end"],
+	[data-align#{$media}="start between"],
+	[data-align#{$media}="start around"] {
 		align-content: flex-start;
 	}
 
-	[align#{$media}="center start"],
-	[align#{$media}="center center"],
-	[align#{$media}="center end"],
-	[align#{$media}="center between"],
-	[align#{$media}="center around"] {
+	[data-align#{$media}="center start"],
+	[data-align#{$media}="center center"],
+	[data-align#{$media}="center end"],
+	[data-align#{$media}="center between"],
+	[data-align#{$media}="center around"] {
 		align-content: center;
 	}
 
-	[align#{$media}="end start"],
-	[align#{$media}="end center"],
-	[align#{$media}="end end"],
-	[align#{$media}="end between"],
-	[align#{$media}="end around"] {
+	[data-align#{$media}="end start"],
+	[data-align#{$media}="end center"],
+	[data-align#{$media}="end end"],
+	[data-align#{$media}="end between"],
+	[data-align#{$media}="end around"] {
 		align-content: flex-end;
 	}
 
-	[align#{$media}="stretch start"],
-	[align#{$media}="stretch center"],
-	[align#{$media}="stretch end"],
-	[align#{$media}="stretch between"],
-	[align#{$media}="stretch around"] {
+	[data-align#{$media}="stretch start"],
+	[data-align#{$media}="stretch center"],
+	[data-align#{$media}="stretch end"],
+	[data-align#{$media}="stretch between"],
+	[data-align#{$media}="stretch around"] {
 		align-content: stretch;
 	}
 
-	[align#{$media}="around start"],
-	[align#{$media}="around center"],
-	[align#{$media}="around end"],
-	[align#{$media}="around between"],
-	[align#{$media}="around around"] {
+	[data-align#{$media}="around start"],
+	[data-align#{$media}="around center"],
+	[data-align#{$media}="around end"],
+	[data-align#{$media}="around between"],
+	[data-align#{$media}="around around"] {
 		align-content: space-around;
 	}
 
-	[align#{$media}="between start"],
-	[align#{$media}="between center"],
-	[align#{$media}="between end"],
-	[align#{$media}="between between"],
-	[align#{$media}="between around"] {
+	[data-align#{$media}="between start"],
+	[data-align#{$media}="between center"],
+	[data-align#{$media}="between end"],
+	[data-align#{$media}="between between"],
+	[data-align#{$media}="between around"] {
 		align-content: space-between;
 	}
 
-	[align#{$media}="start start"],
-	[align#{$media}="center start"],
-	[align#{$media}="end start"],
-	[align#{$media}="around start"],
-	[align#{$media}="between start"] {
+	[data-align#{$media}="start start"],
+	[data-align#{$media}="center start"],
+	[data-align#{$media}="end start"],
+	[data-align#{$media}="around start"],
+	[data-align#{$media}="between start"] {
 		justify-content: flex-start;
 	}
 
-	[align#{$media}="start center"],
-	[align#{$media}="center center"],
-	[align#{$media}="end center"],
-	[align#{$media}="around center"],
-	[align#{$media}="between center"] {
+	[data-align#{$media}="start center"],
+	[data-align#{$media}="center center"],
+	[data-align#{$media}="end center"],
+	[data-align#{$media}="around center"],
+	[data-align#{$media}="between center"] {
 		justify-content: center;
 	}
 
-	[align#{$media}="start end"],
-	[align#{$media}="center end"],
-	[align#{$media}="end end"],
-	[align#{$media}="around end"],
-	[align#{$media}="between end"] {
+	[data-align#{$media}="start end"],
+	[data-align#{$media}="center end"],
+	[data-align#{$media}="end end"],
+	[data-align#{$media}="around end"],
+	[data-align#{$media}="between end"] {
 		justify-content: flex-end;
 	}
 
-	[align#{$media}="start around"],
-	[align#{$media}="center around"],
-	[align#{$media}="end around"],
-	[align#{$media}="around around"],
-	[align#{$media}="between around"] {
+	[data-align#{$media}="start around"],
+	[data-align#{$media}="center around"],
+	[data-align#{$media}="end around"],
+	[data-align#{$media}="around around"],
+	[data-align#{$media}="between around"] {
 		justify-content: space-around;
 	}
 
-	[align#{$media}="start between"],
-	[align#{$media}="center between"],
-	[align#{$media}="end between"],
-	[align#{$media}="around between"],
-	[align#{$media}="between between"] {
+	[data-align#{$media}="start between"],
+	[data-align#{$media}="center between"],
+	[data-align#{$media}="end between"],
+	[data-align#{$media}="around between"],
+	[data-align#{$media}="between between"] {
 		justify-content: space-between;
 	}
 
 	// controls align-items
-	[align-items#{$media}="baseline"] {
+	[data-align-items#{$media}="baseline"] {
 		align-items: baseline;
 	}
 
-	[align-items#{$media}="start"] {
+	[data-align-items#{$media}="start"] {
 		align-items: flex-start;
 	}
 
-	[align-items#{$media}="center"] {
+	[data-align-items#{$media}="center"] {
 		align-items: center;
 	}
 
-	[align-items#{$media}="end"] {
+	[data-align-items#{$media}="end"] {
 		align-items: flex-end;
 	}
 
-	[align-items#{$media}="stretch"] {
+	[data-align-items#{$media}="stretch"] {
 		align-items: stretch;
 	}
 
 	// controls align-self
-	[align-self#{$media}="baseline"] {
+	[data-align-self#{$media}="baseline"] {
 		align-self: baseline;
 	}
 
-	[align-self#{$media}="start"] {
+	[data-align-self#{$media}="start"] {
 		align-self: flex-start;
 	}
 
-	[align-self#{$media}="center"] {
+	[data-align-self#{$media}="center"] {
 		align-self: center;
 	}
 
-	[align-self#{$media}="end"] {
+	[data-align-self#{$media}="end"] {
 		align-self: flex-end;
 	}
 
-	[align-self#{$media}="stretch"] {
+	[data-align-self#{$media}="stretch"] {
 		align-self: stretch;
 	}
 
 	// flex items
-	[flex#{$media}] {
+	[data-flex#{$media}] {
 		flex: 1;
 	}
 
-	[flex#{$media}="auto"] {
+	[data-flex#{$media}="auto"] {
 		flex: 1 1 auto;
 	}
 
-	[flex#{$media}="nogrow"] {
+	[data-flex#{$media}="nogrow"] {
 		flex: 0 1 auto;
 	}
 
-	[flex#{$media}="noshrink"] {
+	[data-flex#{$media}="noshrink"] {
 		flex: 1 0 auto;
 	}
 
-	[flex#{$media}="0"] {
+	[data-flex#{$media}="0"] {
 		flex: 0 0 auto;
 	}
 
 	// fix oversize
-	[flow#{$media}^="row"] > [flex] {
+	[data-flow#{$media}^="row"] > [flex] {
 		max-height: 100%;
 	}
 
-	[flow#{$media}^="column"] > [flex] {
+	[data-flow#{$media}^="column"] > [flex] {
 		max-width: 100%;
 	}
 
 	// column
 	@for $i from 1 through $columns-item {
-		[flex#{$media}="#{$i}"] {
+		[data-flex#{$media}="#{$i}"] {
 			flex: 0 0 (100% / $columns-item * $i);
 		}
 		
-		[flow^="row"] > [flex#{$media}="#{$i}"] {
+		[data-flow^="row"] > [flex#{$media}="#{$i}"] {
 			max-width: (100% / $columns-item * $i);
 		}
 		
-		[flow^="column"] > [flex#{$media}="#{$i}"] {
+		[data-flow^="column"] > [flex#{$media}="#{$i}"] {
 			max-height: (100% / $columns-item * $i);
 		}
 	}
 
 	// divided
 	@for $i from 1 through $divided-item {
-		[divided#{$media}="#{$i}"] > * {
+		[data-divided#{$media}="#{$i}"] > * {
 			flex: 0 0 (100% / $i);
 		}
 
-		[divided#{$media}="#{$i}"][flow^="row"] > * {
+		[data-divided#{$media}="#{$i}"][flow^="row"] > * {
 			max-width: (100% / $i);
 		}
 
-		[divided#{$media}="#{$i}"][flow^="column"] > * {
+		[data-divided#{$media}="#{$i}"][flow^="column"] > * {
 			max-height: (100% / $i);
 		}
 	}
 
 	// controls flex order
-	[order#{$media}="initial"]{
+	[data-order#{$media}="initial"]{
 		order: 0;
 	}
 
 	@for $i from 1 through $order-length {
 		@if $i == 1 {
-			[order#{$media}="first"],
-			[order#{$media}="first-1"] {
+			[data-order#{$media}="first"],
+			[data-order#{$media}="first-1"] {
 				order: 0 - $order-length;
 			}
 		} @else {
-			[order#{$media}="first-#{$i}"]{
+			[data-order#{$media}="first-#{$i}"]{
 				order: 0 - ($order-length + 1) + $i;
 			}
 		}
@@ -300,12 +300,12 @@ $order-length: 6 !default;
 
 	@for $i from 1 through $order-length {
 		@if $i == 1 {
-			[order#{$media}="last"],
-			[order#{$media}="last-1"] {
+			[data-order#{$media}="last"],
+			[data-order#{$media}="last-1"] {
 				order: $order-length;
 			}
 		} @else {
-			[order#{$media}="last-#{$i}"]{
+			[data-order#{$media}="last-#{$i}"]{
 				order: $order-length + 1 - $i;
 			}
 		}
