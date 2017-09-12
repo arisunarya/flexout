@@ -228,39 +228,68 @@ $order-length: 6 !default;
 	[data-flex#{$media}="auto"] {
 		flex: 1 1 auto;
 	}
-
+	
 	[data-flex#{$media}="nogrow"] {
 		flex: 0 1 auto;
 	}
-
+	
 	[data-flex#{$media}="noshrink"] {
 		flex: 1 0 auto;
 	}
 
-	[data-flex#{$media}="0"] {
-		flex: 0 0 auto;
+	[data-flow^="row"] > {
+		$flex-row-items : '';
+    @for $i from 1 through $columns-item {
+    	$flex-row-items : $flex-row-items + '[data-flex' + '#{$media}' + '="' + $i + '"],';
+    }
+    #{$flex-row-items},
+		[data-flex#{$media}="auto"],
+		[data-flex#{$media}="nogrow"],
+		[data-flex#{$media}="noshrink"] {
+			max-width: none;
+		}
 	}
 
-	// fix oversize
-	[data-flow#{$media}^="row"] > [flex] {
+	[data-flow^="column"] > {
+		$flex-column-items : '';
+    @for $i from 1 through $columns-item {
+    	$flex-column-items : $flex-column-items + '[data-flex' + '#{$media}' + '="' + $i + '"],';
+    }
+    #{$flex-column-items},
+		[data-flex#{$media}="auto"],
+		[data-flex#{$media}="nogrow"],
+		[data-flex#{$media}="noshrink"] {
+			max-height: none;
+		}
+	}
+	
+	// fix size
+	[data-flow#{$media}^="row"] > [data-flex] {
 		max-height: 100%;
 	}
 
-	[data-flow#{$media}^="column"] > [flex] {
+	[data-flow#{$media}^="column"] > [data-flex] {
 		max-width: 100%;
+	}
+
+	@for $i from 1 through $columns-item {
+		[data-flex#{$media}="#{$i}"] {
+			flex: $i;
+		}
 	}
 
 	// column
 	@for $i from 1 through $columns-item {
-		[data-flex#{$media}="#{$i}"] {
+
+		[data-flex#{$media}="col-#{$i}"] {
 			flex: 0 0 (100% / $columns-item * $i);
 		}
 		
-		[data-flow^="row"] > [flex#{$media}="#{$i}"] {
+		[data-flow^="row"] > [data-flex#{$media}="col-#{$i}"] {
 			max-width: (100% / $columns-item * $i);
 		}
 		
-		[data-flow^="column"] > [flex#{$media}="#{$i}"] {
+		[data-flow^="column"] > [data-flex#{$media}="col-#{$i}"] {
 			max-height: (100% / $columns-item * $i);
 		}
 	}
@@ -271,11 +300,11 @@ $order-length: 6 !default;
 			flex: 0 0 (100% / $i);
 		}
 
-		[data-divided#{$media}="#{$i}"][flow^="row"] > * {
+		[data-divided#{$media}="#{$i}"][data-flow^="row"] > * {
 			max-width: (100% / $i);
 		}
 
-		[data-divided#{$media}="#{$i}"][flow^="column"] > * {
+		[data-divided#{$media}="#{$i}"][data-flow^="column"] > * {
 			max-height: (100% / $i);
 		}
 	}
