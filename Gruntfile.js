@@ -8,7 +8,7 @@ module.exports = function(grunt){
 					outputStyle: "expanded"
 				},
 				files: {
-					'dist/flexout.css': 'flexout.scss'
+					'dist/flexout.css': '_flexout.scss'
 				}
 			},
 			docs: {
@@ -86,7 +86,7 @@ module.exports = function(grunt){
 				],
 			},
 			dist: {
-				files: "flexout.scss",
+				files: "_flexout.scss",
 				tasks: ["sass", "autoprefixer", "cssmin"]
 			},
 			docs: {

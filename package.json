@@ -4,7 +4,7 @@
   "homepage": "https://github.com/arisunarya/flexout#readme",
   "author": "Ari Sunarya",
   "description": "flexbox layout",
-  "main": "flexout.scss",
+  "main": "_flexout.scss",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arisunarya/flexout.git"
