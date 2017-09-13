@@ -5,6 +5,11 @@ $order-length: 6 !default;
 	@if $media {
 		$media: "-#{$media}";
 	}
+	
+	[data-flow#{$media}^="row"],
+	[data-flow#{$media}^="column"]{
+		display: flex;
+	}
 
 	// controls flex-direction & flex-wrap
 	[data-flow#{$media}="row nowrap"] {
@@ -56,11 +61,6 @@ $order-length: 6 !default;
 	}
 
 	// using single values
-	[data-flow#{$media}^="row"],
-	[data-flow#{$media}^="column"]{
-		display: flex;
-	}
-	
 	[data-flow#{$media}="row"] {
 		flex-direction: row;
 	}
