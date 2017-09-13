@@ -59,10 +59,7 @@
 }
 
 [data-flow^="row"],
-[data-flow^="column"],
-[data-flow="wrap"],
-[data-flow="wrap-reverse"],
-[data-flow="nowrap"] {
+[data-flow^="column"] {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
