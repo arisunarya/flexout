@@ -6,10 +6,6 @@ $order-length: 6 !default;
 		$media: "-#{$media}";
 	}
 
-	[data-flow#{$media}] {
-		display: flex;
-	}
-
 	// controls flex-direction & flex-wrap
 	[data-flow#{$media}="row nowrap"] {
 		flex-flow: row nowrap;
@@ -59,7 +55,15 @@ $order-length: 6 !default;
 		flex-flow: column-reverse wrap-reverse;
 	}
 
-	// for single values
+	// using single values
+	[data-flow#{$media}^="row"],
+	[data-flow#{$media}^="column"],
+	[data-flow#{$media}="wrap"],
+	[data-flow#{$media}="wrap-reverse"],
+	[data-flow#{$media}="nowrap"]{
+		display: flex;
+	}
+	
 	[data-flow#{$media}="row"] {
 		flex-direction: row;
 	}
@@ -217,6 +221,11 @@ $order-length: 6 !default;
 
 	[data-align-self#{$media}="stretch"] {
 		align-self: stretch;
+	}
+
+	// flex reset
+	[data-flex#{$media}] {
+		box-sizing: border-box;
 	}
 
 	// flex items
