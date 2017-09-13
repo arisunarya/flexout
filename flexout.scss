@@ -221,16 +221,21 @@ $order-length: 6 !default;
 	}
 
 	// flex items
-	[data-flex#{$media}] {
-		flex: 1;
+	[data-flex#{$media}],
+	[data-flex#{$media}="nogrow"] {
+		flex: 0 1 auto;
+	}
+	
+	[data-flex#{$media}="grow"] {
+		flex: 1 1 100%;
 	}
 
 	[data-flex#{$media}="auto"] {
 		flex: 1 1 auto;
 	}
 	
-	[data-flex#{$media}="nogrow"] {
-		flex: 0 1 auto;
+	[data-flex#{$media}="none"] {
+		flex: 0 0 auto;
 	}
 	
 	[data-flex#{$media}="noshrink"] {
@@ -239,12 +244,16 @@ $order-length: 6 !default;
 
 	[data-flow^="row"] > {
 		$flex-row-items : '';
-    @for $i from 1 through $columns-item {
-    	$flex-row-items : $flex-row-items + '[data-flex' + '#{$media}' + '="' + $i + '"],';
-    }
-    #{$flex-row-items},
-		[data-flex#{$media}="auto"],
+
+		@for $i from 1 through $columns-item {
+			$flex-row-items : $flex-row-items + '[data-flex' + '#{$media}' + '="' + $i + '"],';
+		}
+
+		#{$flex-row-items},
 		[data-flex#{$media}="nogrow"],
+		[data-flex#{$media}="grow"],
+		[data-flex#{$media}="auto"],
+		[data-flex#{$media}="none"],
 		[data-flex#{$media}="noshrink"] {
 			max-width: none;
 		}
@@ -252,12 +261,16 @@ $order-length: 6 !default;
 
 	[data-flow^="column"] > {
 		$flex-column-items : '';
-    @for $i from 1 through $columns-item {
-    	$flex-column-items : $flex-column-items + '[data-flex' + '#{$media}' + '="' + $i + '"],';
-    }
-    #{$flex-column-items},
-		[data-flex#{$media}="auto"],
+
+		@for $i from 1 through $columns-item {
+			$flex-column-items : $flex-column-items + '[data-flex' + '#{$media}' + '="' + $i + '"],';
+		}
+
+		#{$flex-column-items},
 		[data-flex#{$media}="nogrow"],
+		[data-flex#{$media}="grow"],
+		[data-flex#{$media}="auto"],
+		[data-flex#{$media}="none"],
 		[data-flex#{$media}="noshrink"] {
 			max-height: none;
 		}
@@ -272,7 +285,8 @@ $order-length: 6 !default;
 		max-width: 100%;
 	}
 
-	@for $i from 1 through $columns-item {
+	// flex
+	@for $i from 0 through $columns-item {
 		[data-flex#{$media}="#{$i}"] {
 			flex: $i;
 		}
@@ -280,7 +294,6 @@ $order-length: 6 !default;
 
 	// column
 	@for $i from 1 through $columns-item {
-
 		[data-flex#{$media}="col-#{$i}"] {
 			flex: 0 0 (100% / $columns-item * $i);
 		}

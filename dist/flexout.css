@@ -265,10 +265,17 @@
           align-self: stretch;
 }
 
-[data-flex] {
+[data-flex],
+[data-flex="nogrow"] {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+[data-flex="grow"] {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 [data-flex="auto"] {
@@ -277,10 +284,10 @@
           flex: 1 1 auto;
 }
 
-[data-flex="nogrow"] {
+[data-flex="none"] {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -webkit-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 [data-flex="noshrink"] {
@@ -290,15 +297,19 @@
 }
 
 [data-flow^="row"] > [data-flex="1"], [data-flow^="row"] > [data-flex="2"], [data-flow^="row"] > [data-flex="3"], [data-flow^="row"] > [data-flex="4"], [data-flow^="row"] > [data-flex="5"], [data-flow^="row"] > [data-flex="6"], [data-flow^="row"] > [data-flex="7"], [data-flow^="row"] > [data-flex="8"], [data-flow^="row"] > [data-flex="9"], [data-flow^="row"] > [data-flex="10"], [data-flow^="row"] > [data-flex="11"], [data-flow^="row"] > [data-flex="12"],
-[data-flow^="row"] > [data-flex="auto"],
 [data-flow^="row"] > [data-flex="nogrow"],
+[data-flow^="row"] > [data-flex="grow"],
+[data-flow^="row"] > [data-flex="auto"],
+[data-flow^="row"] > [data-flex="none"],
 [data-flow^="row"] > [data-flex="noshrink"] {
   max-width: none;
 }
 
 [data-flow^="column"] > [data-flex="1"], [data-flow^="column"] > [data-flex="2"], [data-flow^="column"] > [data-flex="3"], [data-flow^="column"] > [data-flex="4"], [data-flow^="column"] > [data-flex="5"], [data-flow^="column"] > [data-flex="6"], [data-flow^="column"] > [data-flex="7"], [data-flow^="column"] > [data-flex="8"], [data-flow^="column"] > [data-flex="9"], [data-flow^="column"] > [data-flex="10"], [data-flow^="column"] > [data-flex="11"], [data-flow^="column"] > [data-flex="12"],
-[data-flow^="column"] > [data-flex="auto"],
 [data-flow^="column"] > [data-flex="nogrow"],
+[data-flow^="column"] > [data-flex="grow"],
+[data-flow^="column"] > [data-flex="auto"],
+[data-flow^="column"] > [data-flex="none"],
 [data-flow^="column"] > [data-flex="noshrink"] {
   max-height: none;
 }
@@ -309,6 +320,12 @@
 
 [data-flow^="column"] > [data-flex] {
   max-width: 100%;
+}
+
+[data-flex="0"] {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+          flex: 0;
 }
 
 [data-flex="1"] {
