@@ -44,11 +44,14 @@
 				</section>
 
 				<section>
-					<div data-flow="row wrap">
-						<div data-flex="col-6" data-flow="row" data-column="1">
-							<div class="box-item">item</div>
+					<div data-flow="row wrap" class="row">
+						<div data-flex="col-6" data-flow="row" class="col">
+							<div data-flex="1" data-flow="row" class="row">
+								<div class="col" data-flex="1"><div class="box-item">item</div></div>
+								<div class="col" data-flex="1"><div class="box-item">item</div></div>
+							</div>
 						</div>
-						<div data-flex="col-6">
+						<div data-flex="col-6" class="col">
 							<div class="box-item">item</div>
 							<div class="box-item">item</div>
 							<div class="box-item">item</div>

@@ -8,11 +8,12 @@ module.exports = function(grunt){
 					outputStyle: "expanded"
 				},
 				files: {
-					'dist/flexout.css': '_flexout.scss'
+					'dist/flexout.css': 'flexout.scss'
 				}
 			},
 			docs: {
 				options: {
+					outputStyle: "expanded",
 					sourceMap: true
 				},
 				files: {
@@ -57,7 +58,7 @@ module.exports = function(grunt){
 					sourceMap: true
 				},
 				files: {
-					"docs/css/docs.css": "docs/css/docs.css"
+					// "docs/css/docs.css": "docs/css/docs.css"
 				}
 			}
 		},
@@ -86,12 +87,12 @@ module.exports = function(grunt){
 				],
 			},
 			dist: {
-				files: "_flexout.scss",
+				files: "flexout.scss",
 				tasks: ["sass", "autoprefixer", "cssmin"]
 			},
 			docs: {
 				files: "docs/scss/*.scss",
-				tasks: ["sass:docs", "autoprefixer:docs", "cssmin:docs"]
+				tasks: ["sass:docs", "autoprefixer:docs"]
 			}
 		}
 	});

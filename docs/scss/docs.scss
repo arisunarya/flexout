@@ -13,11 +13,11 @@
 	@include flexout("lg");
 }
 
-// *::before,
-// *::after,
-// *{
-// 	box-sizing: inherit;
-// }
+*::before,
+*::after,
+*{
+	box-sizing: inherit;
+}
 
 html,
 body{
@@ -74,11 +74,11 @@ section{
 	text-align: center;
 }
 
-.gutter{
-	margin: -10px;
+.row{
+	margin: 0 -10px;
 }
 
-.gutter-item{
+.col{
 	padding: 0 10px;
 }
 
